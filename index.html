@@ -3024,9 +3024,8 @@
             </div>
 
             <div class="kit-row">
-                <p class="kit-copy">Every project here ships with presentation plates like the ones below. Open the
-                    <b>mockup kit</b> for fullscreen, studio lit shots you can screenshot straight into your Fiverr
-                    gallery or drop into a Figma frame.</p>
+                <p class="kit-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quis!
+                    <b>Lorem, ipsum dolor.</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laudantium aperiam eaque ex fugiat dignissimos!</p>
                 <button id="kit-open" class="btn btn--solid" type="button">Open mockup kit</button>
             </div>
 
@@ -3412,9 +3411,9 @@
     </footer>
 
     <!-- MOCKUP KIT -->
-    <div id="export-view" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mockup kit, screenshot mode">
+    <div id="export-view" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mockup kit">
         <div class="ex-top">
-            <span class="ex-title">MOCKUP KIT · SCREENSHOT MODE</span>
+            <span class="ex-title">MOCKUP KIT</span>
             <span class="ex-hint">ARROW KEYS OR SWIPE TO CHANGE SLIDES</span>
             <button id="ex-bg" type="button">BG · DARK</button>
             <button id="ex-close" type="button">CLOSE ✕</button>
@@ -3444,8 +3443,7 @@
             const hasGsap = (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined');
             const loader = qs('#loader');
 
-            /* Grab clean copies of every plate before any animation touches them.
-               These power the mockup kit so screenshots are always pristine. */
+            /* Grab clean copies */
             const pristinePlates = qsa('.plate').map(p => {
                 const c = p.cloneNode(true);
                 c.removeAttribute('data-tilt');
